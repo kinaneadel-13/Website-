@@ -1,0 +1,168 @@
+.title{
+    display: flex;
+    justify-content: center;/*easy to center this element*/
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+
+.content{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap; /*because if the space is not enough a card must take the next line if not writing this the elements will be automatically nowrap so it will resize if the page is not enough*/
+   
+}
+
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+
+.card:hover{
+    transform: scale(1.1); /*for the effect */
+
+}
+
+.icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: #000016;
+
+}
+
+.projects .contents{
+    margin-top: 30px;  
+}
+
+.more-details{
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover{
+    color: #601cfc;
+}
+
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 10px;
+}
+
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-img img{
+    width: 100%;/*to show the photo comleted*/
+}
+
+.project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em; /*or maybe more*/
+    width: 23em;
+    overflow: hidden; /*Hide anything that goes outside the container.
+It’s used for clean layouts, rounded edges, and animation effects.*/
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-img{
+    opacity: 0.9;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color: #000;
+
+}
+
+.contact .info p{
+    font-size: 1.5em;
+}
+
+@media (max-width:1023px){/*these rules will be applied when the screen is under 1023px*/
+    header{
+        padding: 12px 20px;
+        
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    .section{
+        padding: 80px 20px ;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main h2{
+        font-size: 0.8em;
+
+    }
+
+    .main h3{
+        font-size: 1.4em;
+        
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
